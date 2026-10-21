@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HOLY_FATHER_215 — стримы 6 дней в неделю в 20:00 МСК</title>
+<meta name="description" content="Начинающий стример Holy_Father_215 — эфиры 6 дней в неделю в 20:00 по МСК, 20–100 зрителей, уютный чат. Воскресенье решает голосование в Telegram." />
+<meta property="og:title" content="HOLY_FATHER_215 — стримы 6 дней в неделю в 20:00 МСК" />
+<meta property="og:description" content="Начинающий стример, 20–100 зрителей, эфиры 6/7 в 20:00 МСК. Воскресенье — по голосованию в Telegram." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#05010a" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%239146ff'/%3E%3Cpath d='M8 10h4v5H8zM14 10h4v5h-4zM8 17h4v5H8zM14 17h4v5h-4zM20 12l5 3.5-5 3.5z' fill='%23fff'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<noscript><style>.reveal{opacity:1;transform:none}.cd{display:flex}</style></noscript>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:#05010a;color:#f3ecff;overflow-x:hidden;
+  font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+::selection{background:#9146ff;color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#0b0416}
+::-webkit-scrollbar-thumb{background:linear-gradient(#9146ff,#ff3ea5);border-radius:99px}
+
+:root{
+  --void:#05010a;--purple:#9146ff;--purple-l:#a970ff;--pink:#ff3ea5;--cyan:#22d3ee;
+  --muted:rgba(243,236,255,.55);--muted2:rgba(243,236,255,.4);
+  --line:rgba(255,255,255,.1);--card:rgba(255,255,255,.045);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --font-d:"Unbounded",system-ui,sans-serif;
+}
+.container{width:min(1152px,100% - 40px);margin-inline:auto}
+.ic{width:20px;height:20px;fill:currentColor;flex:none}
+.display{font-family:var(--font-d)}
+.grad-text{background:linear-gradient(90deg,#9146ff,#c084fc,#ff3ea5);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cyan{color:var(--cyan)}
+.pink{color:var(--pink)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+/* ---------- background ---------- */
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.grid-bg{position:absolute;inset:0;
+  background-image:linear-gradient(rgba(145,70,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(145,70,255,.09) 1px,transparent 1px);
+  background-size:56px 56px}
+.orb{position:absolute;border-radius:50%;filter:blur(130px)}
+.o1{width:520px;height:520px;left:-160px;top:-10%;background:rgba(145,70,255,.3)}
+.o2{width:480px;height:480px;right:-130px;top:30%;background:rgba(255,62,165,.22)}
+.o3{width:440px;height:440px;left:33%;bottom:-10%;background:rgba(34,211,238,.16)}
+.noise{position:absolute;inset:0;pointer-events:none;opacity:.16;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ---------- animations ---------- */
+@keyframes float-slow{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(0,-30px,0) scale(1.06)}}
+@keyframes drift{0%{transform:translate3d(0,0,0)}25%{transform:translate3d(40px,-30px,0)}50%{transform:translate3d(-30px,25px,0)}75%{transform:translate3d(25px,40px,0)}100%{transform:translate3d(0,0,0)}}
+@keyframes pulse-glow{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.12)}}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes glitch-a{0%,92%,100%{transform:translate(0,0);opacity:0}93%{transform:translate(-4px,2px);opacity:.9}95%{transform:translate(5px,-3px);opacity:.9}97%{transform:translate(-3px,-1px);opacity:.6}}
+@keyframes flicker{0%,100%{opacity:1}8%{opacity:.85}9%{opacity:1}22%{opacity:.92}23%{opacity:1}}
+@keyframes scan{0%{transform:translateY(-100%)}100%{transform:translateY(900%)}}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes ring{0%{transform:scale(.9);opacity:.8}100%{transform:scale(1.9);opacity:0}}
+@keyframes sheen{0%{transform:translateX(-160%) skewX(-18deg)}100%{transform:translateX(260%) skewX(-18deg)}}
+.anim-float{animation:float-slow 14s ease-in-out infinite}
+.anim-drift{animation:drift 26s ease-in-out infinite}
+.anim-glow{animation:pulse-glow 5s ease-in-out infinite}
+.anim-marquee{animation:marquee 28s linear infinite}
+.anim-glitch{animation:glitch-a 6s steps(1,end) infinite}
+.anim-flicker{animation:flicker 7s linear infinite}
+.anim-scan{animation:scan 7s linear infinite}
+.anim-spin{animation:spin 18s linear infinite}
+.anim-ring{animation:ring 2.4s cubic-bezier(0,0,.2,1) infinite}
+.glow-p{box-shadow:0 0 40px -6px rgba(145,70,255,.65)}
+.glow-pk{box-shadow:0 0 40px -6px rgba(255,62,165,.6)}
+.glow-t{box-shadow:0 0 45px -8px rgba(34,158,217,.9)}
+.text-glow{text-shadow:0 0 24px rgba(145,70,255,.85),0 0 60px rgba(255,62,165,.45)}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(28px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .9s var(--ease),transform .9s var(--ease)}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  .reveal{opacity:1;transform:none}
+}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;inset:0 0 auto;z-index:50;border-bottom:1px solid rgba(255,255,255,.08);
+  background:rgba(5,1,10,.75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.nav-inner{display:flex;align-items:center;gap:16px;padding:13px 0}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{position:relative;display:grid;place-items:center;width:36px;height:36px;border-radius:12px;
+  background:linear-gradient(135deg,#9146ff,#ff3ea5);box-shadow:0 0 40px -6px rgba(145,70,255,.65)}
+.brand-mark .dot{position:absolute;top:-2px;right:-2px;width:10px;height:10px;border-radius:50%;background:#ef4444;box-shadow:0 0 0 2px #05010a}
+.brand-name{font-family:var(--font-d);font-size:13px;font-weight:900;letter-spacing:-.02em;text-transform:uppercase}
+.nav-links{display:none;margin-left:auto;align-items:center;gap:28px}
+.nav-links a{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:rgba(243,236,255,.5);transition:color .25s}
+.nav-links a:hover{color:#fff}
+.nav-actions{margin-left:auto;display:flex;align-items:center;gap:8px}
+@media (min-width:768px){.nav-links{display:flex;margin-left:auto}.nav-actions{margin-left:0}}
+
+/* ---------- buttons ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  border-radius:16px;padding:15px 26px;font-family:var(--font-d);font-size:14px;font-weight:900;
+  letter-spacing:.04em;text-transform:uppercase;transition:transform .3s var(--ease),background .3s,box-shadow .3s;overflow:hidden}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-primary{background:#9146ff;color:#fff;box-shadow:0 0 40px -6px rgba(145,70,255,.65)}
+.btn-primary:hover{background:#a56bff}
+.btn-primary .shine{position:absolute;top:0;bottom:0;left:-40%;width:33%;background:rgba(255,255,255,.3);
+  transform:translateX(-160%) skewX(-18deg);pointer-events:none}
+.btn-primary:hover .shine{animation:sheen .8s ease-out}
+.btn-ghost{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-tg{background:#229ED9;color:#fff;box-shadow:0 0 45px -8px rgba(34,158,217,.9)}
+.btn-tg:hover{background:#2aa9e5}
+.btn-tg .ic{transition:transform .3s}
+.btn-tg:hover .ic{transform:scale(1.12) translateX(2px)}
+.btn-sm{padding:9px 16px;font-size:11px;border-radius:12px}
+.btn-tg-sm{border:1px solid rgba(34,211,238,.35);background:rgba(34,211,238,.12);color:#67e8f9;box-shadow:none}
+.btn-tg-sm:hover{background:rgba(34,211,238,.25)}
+
+/* ---------- badges & chips ---------- */
+.live-badge{display:inline-flex;align-items:center;gap:10px;border-radius:999px;
+  border:1px solid rgba(239,68,68,.35);background:rgba(239,68,68,.1);padding:8px 16px}
+.live-badge span{font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:#fca5a5}
+.dot-pulse{position:relative;display:block;width:8px;height:8px;border-radius:50%;background:#ef4444}
+.dot-pulse::before{content:"";position:absolute;inset:0;border-radius:50%;background:#ef4444;animation:ring 2.4s cubic-bezier(0,0,.2,1) infinite}
+.chip{display:inline-flex;align-items:center;gap:8px;border-radius:999px;border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.05);padding:6px 14px}
+.chip span{font-size:10px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,236,255,.6)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:120px 0 64px}
+@media (min-width:640px){.hero{padding:130px 0 80px}}
+@media (min-width:1024px){.hero{padding:160px 0 96px}}
+.hero-grid{display:grid;gap:48px;align-items:center}
+@media (min-width:1024px){.hero-grid{grid-template-columns:1.05fr 1fr;gap:56px}}
+.hero h1{font-family:var(--font-d);font-size:clamp(2.6rem,8vw,4.4rem);font-weight:900;line-height:.95;letter-spacing:-.03em;margin:24px 0 0}
+.title-line{display:block;position:relative}
+.title-line.glitch::after{content:attr(data-text);position:absolute;left:0;top:0;
+  background:linear-gradient(90deg,#22d3ee,#9146ff);-webkit-background-clip:text;background-clip:text;color:transparent;
+  opacity:.7;animation:glitch-a 6s steps(1,end) infinite;pointer-events:none}
+.hero p.lead{margin:24px 0 0;max-width:34rem;font-size:1rem;line-height:1.75;color:var(--muted)}
+@media (min-width:640px){.hero p.lead{font-size:1.125rem}}
+.hero-cta{margin-top:32px;display:flex;flex-direction:column;gap:14px;align-items:stretch}
+@media (min-width:640px){.hero-cta{flex-direction:row;align-items:center}}
+.counters{display:flex;gap:12px;flex-wrap:wrap}
+.counter{display:flex;align-items:center;gap:9px;border-radius:16px;border:1px solid var(--line);
+  background:rgba(255,255,255,.055);padding:12px 16px;transition:.3s}
+.counter .ic{width:18px;height:18px}
+.counter b{font-family:var(--font-d);font-size:16px;font-weight:700}
+.counter small{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2)}
+.counter.burst{border-color:rgba(255,62,165,.6);background:rgba(255,62,165,.12)}
+.channel-link{margin-top:24px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:12px;color:rgba(243,236,255,.35)}
+.channel-link a{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:rgba(243,236,255,.5);
+  border-bottom:1px dashed rgba(255,255,255,.25);transition:.25s}
+.channel-link a:hover{border-color:var(--pink);color:var(--pink)}
+.stats{margin-top:40px;display:grid;grid-template-columns:repeat(2,1fr);gap:12px;max-width:36rem}
+@media (min-width:640px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{border-radius:16px;border:1px solid var(--line);background:var(--card);padding:14px}
+.stat .ic{width:16px;height:16px;margin-bottom:8px}
+.stat b{display:block;font-family:var(--font-d);font-size:18px;font-weight:900;font-variant-numeric:tabular-nums}
+.stat small{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted2)}
+
+/* ---------- player ---------- */
+.player-wrap{position:relative}
+.player-wrap::before{content:"";position:absolute;inset:-24px;border-radius:40px;z-index:-1;
+  background:radial-gradient(60% 60% at 50% 40%,rgba(145,70,255,.45),transparent 70%);filter:blur(32px)}
+.player{overflow:hidden;border-radius:26px;border:1px solid rgba(255,255,255,.12);background:#0d0518;
+  box-shadow:0 40px 120px -30px rgba(145,70,255,.75)}
+.player-top{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.08);
+  background:linear-gradient(90deg,#1a0b2e,#120724,#1a0b2e)}
+.player-top .live{display:flex;align-items:center;gap:7px}
+.player-top .live span{font-size:10px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:#f87171}
+.player-name{display:flex;align-items:center;gap:8px;min-width:0;font-family:var(--font-d);font-size:12px;font-weight:700}
+.player-name .ic{width:16px;height:16px;color:#a970ff}
+.player-meta{margin-left:auto;display:flex;align-items:center;gap:14px;font-size:11px;color:rgba(243,236,255,.55)}
+.player-meta .v{display:none;align-items:center;gap:6px}
+@media (min-width:640px){.player-meta .v{display:flex}}
+.screen{position:relative;aspect-ratio:16/9;overflow:hidden;
+  background:radial-gradient(120% 120% at 20% 10%,#2a0f4d,#0a0413 60%,#050109)}
+.screen .grid-bg{opacity:.6}
+.screen .so{position:absolute;border-radius:50%;filter:blur(48px)}
+.so1{width:224px;height:224px;left:-64px;top:16px;background:rgba(145,70,255,.45)}
+.so2{width:256px;height:256px;right:-40px;bottom:0;background:rgba(255,62,165,.35);animation-delay:-6s}
+.so3{width:160px;height:160px;left:33%;top:33%;background:rgba(34,211,238,.25);animation:drift 26s ease-in-out infinite}
+.scanline{position:absolute;left:0;right:0;top:0;height:64px;
+  background:linear-gradient(180deg,transparent,rgba(145,70,255,.22),transparent);animation:scan 7s linear infinite}
+.screen-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;text-align:center}
+.halo{position:relative;width:96px;height:96px;margin-bottom:16px}
+@media (min-width:640px){.halo{width:112px;height:112px}}
+.halo .ring1{position:absolute;inset:0;border-radius:50%;border:2px dashed rgba(145,70,255,.6);animation:spin 18s linear infinite}
+.halo .ring2{position:absolute;inset:8px;border-radius:50%;border:1px solid rgba(255,62,165,.5)}
+.halo .core{position:absolute;inset:0;display:grid;place-items:center}
+.halo .core div{display:grid;place-items:center;width:56px;height:56px;border-radius:16px;
+  background:linear-gradient(135deg,#9146ff,#ff3ea5);box-shadow:0 0 40px -6px rgba(145,70,255,.65)}
+@media (min-width:640px){.halo .core div{width:64px;height:64px}}
+.halo .core .ic{width:32px;height:32px;color:#fff}
+@media (min-width:640px){.halo .core .ic{width:36px;height:36px}}
+.screen-center h3{font-family:var(--font-d);font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:-.02em}
+@media (min-width:640px){.screen-center h3{font-size:30px}}
+.screen-center p{margin-top:4px;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--pink)}
+@media (min-width:640px){.screen-center p{font-size:12px}}
+.screen-chip{position:absolute;top:12px;display:none;align-items:center;gap:8px;border-radius:12px;
+  border:1px solid rgba(255,255,255,.12);background:rgba(0,0,0,.55);padding:8px 12px;backdrop-filter:blur(8px)}
+@media (min-width:640px){.screen-chip{display:flex}}
+.screen-chip .ic{width:16px;height:16px}
+.screen-chip span{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;color:rgba(255,255,255,.75)}
+.chip-l{left:12px}.chip-r{right:12px}
+.chat-col{position:absolute;right:0;top:0;bottom:0;width:208px;display:none;flex-direction:column;justify-content:flex-end;
+  padding:12px;background:linear-gradient(270deg,rgba(0,0,0,.7),transparent)}
+@media (min-width:1024px){.chat-col{display:flex}}
+.chat-msg{font-size:11px;line-height:1.35;padding:2px 6px;border-radius:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  animation:rise .5s var(--ease) both;backdrop-filter:blur(2px)}
+.chat-msg b{font-weight:700}
+.controls{position:absolute;inset:auto 0 0;padding:32px 12px 12px;
+  background:linear-gradient(0deg,rgba(0,0,0,.85),rgba(0,0,0,.45),transparent)}
+.bar{height:4px;width:100%;border-radius:99px;background:rgba(255,255,255,.15);overflow:hidden;margin-bottom:8px}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,#9146ff,#ff3ea5);transition:width .3s}
+.ctrls{display:flex;align-items:center;gap:12px;color:#fff}
+.ctrls .ic{width:16px;height:16px}
+.play-btn{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:rgba(255,255,255,.12);transition:.25s}
+.play-btn:hover{background:rgba(255,255,255,.25)}
+.ico-btn{transition:transform .25s}
+.ico-btn:hover{transform:scale(1.12)}
+.time{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;color:rgba(255,255,255,.7)}
+.hd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:10px;font-weight:700;
+  margin-left:auto;display:flex;align-items:center;gap:5px;background:rgba(145,70,255,.85);padding:3px 8px;border-radius:6px;
+  text-transform:uppercase;letter-spacing:.04em}
+.hd .ic{width:12px;height:12px}
+
+/* ---------- ticker ---------- */
+.ticker{overflow:hidden;border-block:1px solid rgba(255,255,255,.1);
+  background:linear-gradient(90deg,rgba(145,70,255,.18),rgba(255,62,165,.12),rgba(145,70,255,.18));padding:12px 0}
+.ticker-track{display:flex;width:max-content;animation:marquee 28s linear infinite}
+.ticker-item{display:flex;align-items:center;gap:24px;padding-inline:24px;flex:none}
+.ticker-item b{font-family:var(--font-d);font-size:13px;font-weight:900;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.8)}
+.ticker-item .ic{width:14px;height:14px;color:var(--pink)}
+
+/* ---------- sections ---------- */
+.section{padding:80px 0}
+@media (min-width:640px){.section{padding:96px 0}}
+.sec-head{max-width:42rem;margin-bottom:48px}
+.sec-head h2{margin:16px 0 0;font-family:var(--font-d);font-size:clamp(1.8rem,5vw,3rem);font-weight:900;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase}
+.sec-head p{margin-top:16px;font-size:1rem;line-height:1.75;color:var(--muted)}
+.features{display:grid;gap:16px}
+@media (min-width:640px){.features{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1024px){.features{grid-template-columns:repeat(3,1fr)}}
+.fcard{position:relative;overflow:hidden;border-radius:24px;border:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.02));padding:24px;
+  transition:transform .4s var(--ease),border-color .4s,background .4s}
+.fcard:hover{transform:translateY(-6px);border-color:rgba(145,70,255,.45);background:rgba(255,255,255,.1)}
+.fcard .blob{position:absolute;right:-40px;top:-40px;width:128px;height:128px;border-radius:50%;
+  background:rgba(145,70,255,.2);filter:blur(40px);opacity:0;transition:opacity .5s}
+.fcard:hover .blob{opacity:1}
+.fcard .fico{position:relative;display:grid;place-items:center;width:48px;height:48px;border-radius:16px;margin-bottom:16px;box-shadow:0 10px 25px -8px rgba(0,0,0,.6)}
+.fcard h3{position:relative;font-family:var(--font-d);font-size:16px;font-weight:700;letter-spacing:-.01em}
+.fcard p{position:relative;margin-top:8px;font-size:14px;line-height:1.7;color:var(--muted)}
+
+/* ---------- quote + schedule ---------- */
+.split{display:grid;gap:24px}
+@media (min-width:1024px){.split{grid-template-columns:1.2fr 1fr}}
+.quote{position:relative;overflow:hidden;border-radius:32px;border:1px solid var(--line);
+  background:linear-gradient(135deg,#1a0b2e,#120724,#0d0418);padding:32px}
+@media (min-width:640px){.quote{padding:48px}}
+.quote .stars{display:flex;gap:4px;margin-bottom:16px}
+.quote .stars .ic{width:16px;height:16px;color:var(--pink)}
+.quote blockquote{margin:0;font-family:var(--font-d);font-size:clamp(1.1rem,3vw,1.5rem);font-weight:700;line-height:1.35;letter-spacing:-.01em}
+.quote .who{display:flex;align-items:center;gap:12px;margin-top:20px}
+.avatar{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,#9146ff,#ff3ea5);font-family:var(--font-d);font-weight:900;font-size:14px}
+.who b{display:block;font-family:var(--font-d);font-size:14px;font-weight:700}
+.who span{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted2)}
+.who .ic{width:14px;height:14px;color:var(--pink)}
+.panel{position:relative;overflow:hidden;border-radius:32px;border:1px solid var(--line);
+  background:rgba(255,255,255,.05);padding:28px;backdrop-filter:blur(8px)}
+@media (min-width:640px){.panel{padding:36px}}
+.panel h3{font-family:var(--font-d);font-size:clamp(1.25rem,3vw,1.5rem);font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+.panel .sub{margin-top:8px;font-size:14px;color:var(--muted)}
+.cd{display:flex;gap:10px;margin-top:28px}
+.cd div{flex:1;position:relative;overflow:hidden;text-align:center;border-radius:16px;
+  border:1px solid rgba(255,255,255,.12);background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.03));padding:16px 8px}
+.cd div::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent)}
+.cd b{display:block;font-family:var(--font-d);font-size:clamp(1.5rem,5vw,2.25rem);font-weight:900;font-variant-numeric:tabular-nums}
+.cd small{display:block;margin-top:4px;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted2)}
+.week{margin-top:24px;display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.day{border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);padding:10px 2px;text-align:center;transition:.3s}
+.day b{display:block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(243,236,255,.5)}
+.day span{display:block;margin-top:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;color:rgba(255,255,255,.85)}
+.day.today{border-color:rgba(145,70,255,.7);background:rgba(145,70,255,.2);box-shadow:0 0 25px -8px rgba(145,70,255,.9)}
+.day.today b{color:var(--pink)}
+.day.sun{border-style:dashed;border-color:rgba(34,211,238,.4);background:rgba(34,211,238,.08)}
+.day.sun b,.day.sun span{color:#67e8f9}
+.day.sun.today{border-color:rgba(34,211,238,.7);background:rgba(34,211,238,.2);box-shadow:0 0 25px -8px rgba(34,211,238,.9)}
+.note{margin-top:24px;padding:16px;border-radius:16px;border:1px solid rgba(34,211,238,.3);
+  background:rgba(34,211,238,.08);text-align:center}
+.note p{font-size:12px;line-height:1.7;color:var(--muted)}
+.note p b{color:rgba(255,255,255,.9);font-weight:700}
+.note p em{font-style:normal;color:var(--cyan)}
+.note a{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:8px 16px;border-radius:12px;
+  background:rgba(34,211,238,.18);font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#67e8f9;transition:.3s}
+.note a:hover{background:rgba(34,211,238,.3)}
+
+/* ---------- telegram ---------- */
+.tg{position:relative;overflow:hidden;border-radius:32px;border:1px solid rgba(34,211,238,.3);
+  background:linear-gradient(135deg,#06283d,#0b1a2e,#0d0418);padding:32px}
+@media (min-width:640px){.tg{padding:48px}}
+.tg .orb-t{position:absolute;right:-64px;top:-64px;width:256px;height:256px;border-radius:50%;
+  background:rgba(34,211,238,.25);filter:blur(48px);animation:float-slow 14s ease-in-out infinite}
+.tg-grid{position:relative;display:grid;gap:32px;align-items:center}
+@media (min-width:1024px){.tg-grid{grid-template-columns:1.3fr 1fr}}
+.tg h2{margin:16px 0 0;font-family:var(--font-d);font-size:clamp(1.5rem,4.5vw,2.25rem);font-weight:900;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase}
+.tg p{margin-top:16px;max-width:36rem;font-size:14px;line-height:1.75;color:var(--muted)}
+@media (min-width:640px){.tg p{font-size:1rem}}
+.tg .tg-link{display:inline-block;margin-top:24px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:12px;color:rgba(103,232,249,.7);text-decoration:underline dashed;text-underline-offset:4px;transition:.25s}
+.tg .tg-link:hover{color:#67e8f9}
+
+/* ---------- share ---------- */
+.share{position:relative;overflow:hidden;border-radius:32px;border:1px solid var(--line);
+  background:rgba(255,255,255,.05);padding:28px;backdrop-filter:blur(8px)}
+@media (min-width:640px){.share{padding:36px}}
+.share .grid-bg{opacity:.4}
+.share h3{position:relative;font-family:var(--font-d);font-size:clamp(1.25rem,3vw,1.5rem);font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+.share .sub{position:relative;margin-top:8px;max-width:28rem;font-size:14px;color:var(--muted)}
+.copy-box{position:relative;margin-top:24px;display:flex;flex-direction:column;gap:12px;border-radius:16px;
+  border:1px solid var(--line);background:rgba(0,0,0,.4);padding:8px}
+@media (min-width:640px){.copy-box{flex-direction:row;align-items:center}}
+.copy-box code{flex:1;padding:8px 12px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:12px;color:var(--cyan);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (min-width:640px){.copy-box code{font-size:14px}}
+.copy-btn{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:12px;background:rgba(255,255,255,.1);
+  padding:10px 16px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;transition:.25s}
+.copy-btn:hover{background:rgba(255,255,255,.2)}
+.copy-btn .ic{width:16px;height:16px}
+.copy-btn.done .ic{color:#a3e635}
+.socials{position:relative;margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}
+.socials a,.socials button{border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.05);
+  padding:10px 16px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7);transition:.25s}
+.socials a:hover,.socials button:hover{border-color:rgba(255,255,255,.3);color:#fff}
+.socials .ic{width:16px;height:16px;display:inline-block;vertical-align:-3px;margin-right:6px}
+
+/* ---------- final cta ---------- */
+.cta{position:relative;overflow:hidden;border-radius:40px;border:1px solid rgba(145,70,255,.3);
+  background:linear-gradient(135deg,#2a0f4d,#1a0b2e,#450f2a);padding:56px 28px;text-align:center}
+@media (min-width:640px){.cta{padding:80px 56px}}
+.cta .o{position:absolute;border-radius:50%;filter:blur(48px)}
+.cta .o1{width:224px;height:224px;left:-40px;top:0;background:rgba(145,70,255,.45);animation:float-slow 14s ease-in-out infinite}
+.cta .o2{width:224px;height:224px;right:-40px;bottom:0;background:rgba(255,62,165,.35);animation:float-slow 14s ease-in-out infinite -5s}
+.cta h2{position:relative;margin:28px 0 0;font-family:var(--font-d);font-size:clamp(1.8rem,5.5vw,3rem);font-weight:900;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase}
+.cta p{position:relative;margin:20px auto 0;max-width:32rem;font-size:1rem;color:var(--muted)}
+.cta .btn-row{position:relative;margin-top:36px;display:flex;justify-content:center}
+.cta .meta{position:relative;margin-top:32px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 24px;font-size:11px;color:rgba(243,236,255,.35)}
+.cta-icon{position:relative;margin:0 auto;display:grid;place-items:center;width:64px;height:64px;border-radius:16px;
+  background:linear-gradient(135deg,#9146ff,#ff3ea5);box-shadow:0 0 40px -6px rgba(255,62,165,.6)}
+.cta-icon .ic{width:32px;height:32px;color:#fff}
+
+/* ---------- footer ---------- */
+.footer{border-top:1px solid rgba(255,255,255,.08);background:rgba(0,0,0,.4)}
+.footer-inner{display:flex;flex-direction:column;align-items:center;gap:16px;padding:32px 0}
+@media (min-width:640px){.footer-inner{flex-direction:row;justify-content:space-between}}
+.footer-brand{display:flex;align-items:center;gap:10px}
+.footer-brand .m{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#9146ff,#ff3ea5)}
+.footer-brand .m .ic{width:16px;height:16px;color:#fff}
+.footer-brand b{font-family:var(--font-d);font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.footer p{font-size:11px;color:rgba(243,236,255,.3);text-align:center}
+@media (min-width:640px){.footer p{text-align:left}}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.footer-links a{display:inline-flex;align-items:center;gap:6px;border-radius:12px;padding:8px 16px;font-size:11px;
+  font-weight:800;letter-spacing:.08em;text-transform:uppercase;transition:.25s}
+.f-twitch{background:rgba(145,70,255,.18);color:#fff}
+.f-twitch:hover{background:rgba(145,70,255,.35)}
+.f-tg{background:rgba(34,158,217,.2);color:#67e8f9}
+.f-tg:hover{background:rgba(34,158,217,.4)}
+.footer-links .ic{width:14px;height:14px}
+
+/* ---------- misc ---------- */
+.sec-label{position:relative;display:inline-flex;align-items:center;gap:8px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);padding:6px 14px}
+.sec-label span{font-size:10px;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,236,255,.6)}
+.sec-label .ic{width:14px;height:14px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.hide-sm{display:none}
+@media (min-width:480px){.hide-sm{display:inline}}
+.hero p.lead b{color:#fff;font-weight:700}
+.hero p.lead b.cyan{color:var(--cyan)}
+</style>
+</head>
+<body>
+
+<!-- ===================== ICON SPRITE ===================== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <symbol id="i-twitch" viewBox="0 0 24 24"><path d="M4.3 3 2.9 5.6v14.9h5.2v2.9l2.9-2.9h4.4l6-5.9V3H4.3Zm15.4 10.7-3.1 3.1h-5.3l-2.8 2.8v-2.8H5.6V4.6h14.1v9.1ZM16.9 8.1v5.2h-1.9V8.1h1.9Zm-5.2 0v5.2H9.8V8.1h1.9Z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13.5 1.5 4 13.4h5.6L8.9 22.5 20 10.2h-6.1l-.4-8.7Z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm7.5 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM9 13.5c-3.3 0-8 1.7-8 5v2.5h16V18.5c0-3.3-4.7-5-8-5Zm7.6.6c-.7 0-1.5.1-2.2.3 1.7 1.1 2.6 2.5 2.6 4.1v2.5h6V19c0-2.9-3.6-4.4-6.4-4.9Z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9A5.4 5.4 0 0 1 12 6.3 5.4 5.4 0 0 1 21.6 12c-2.1 4.4-9.6 9-9.6 9Z"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7Zm12 8v10H5V10h14Z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 17.3-6.2 3.7 1.6-7L2 9.2l7.2-.6L12 2l2.8 6.6 7.2.6-5.4 4.8 1.6 7-6.2-3.7Z"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 7.5 6.5 12 12 4l5.5 8L21 7.5V19H3V7.5Z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2l1.8 5.6L19.5 9l-5.7 1.4L12 16l-1.8-5.6L4.5 9l5.7-1.4L12 2Zm7 12 .9 2.8 2.8.9-2.8.9-.9 2.8-.9-2.8-2.8-.9 2.8-.9L19 14Z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h11v11H9V9Zm-4 6H4V4h11v1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4Zm12.5 3a3.5 3.5 0 0 0-1.8-3.1v6.2A3.5 3.5 0 0 0 16.5 12Z"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.3-.1-.5-.6-.2L6.2 13.1l-4.8-1.5c-1-.3-1.1-1 .2-1.5l18.9-7.3c.9-.3 1.6.2 1.4 1.5Z"/></symbol>
+  <symbol id="i-vote" viewBox="0 0 24 24"><path d="M5 3h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5.2l-2.8 4-2.8-4H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Zm6.2 10.5 5-5-1.4-1.4-3.6 3.6-1.8-1.8L8 10.3l3.2 3.2Z"/></symbol>
+</svg>
+
+<!-- ===================== BACKGROUND ===================== -->
+<div class="bg" aria-hidden="true">
+  <div class="grid-bg"></div>
+  <div class="orb o1 anim-float"></div>
+  <div class="orb o2 anim-float" style="animation-delay:-7s"></div>
+  <div class="orb o3 anim-drift"></div>
+</div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg>
+        <i class="dot"></i>
+      </span>
+      <span class="brand-name">Holy<span class="pink">_</span>Father<span class="cyan">215</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#top">Эфир</a>
+      <a href="#features">Фишки</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#telegram">Голосование</a>
+      <a href="#share">Поделиться</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-tg-sm" href="https://t.me/holyfather215" target="_blank" rel="noopener noreferrer" aria-label="Telegram-канал">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-telegram"/></svg>
+        <span class="hide-sm">Telegram</span>
+      </a>
+      <a class="btn btn-primary btn-sm" href="https://www.twitch.tv/holy_father_215" target="_blank" rel="noopener noreferrer">Смотреть</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <div class="container hero-grid">
+    <div>
+      <div class="live-badge">
+        <i class="dot-pulse"></i>
+        <span>Начинающий стример · 6 дней в неделю в 20:00 МСК</span>
+      </div>
+
+      <h1>
+        <span class="title-line anim-flicker">HOLY</span>
+        <span class="title-line glitch grad-text" data-text="FATHER">FATHER</span>
+        <span class="title-line cyan">_215</span>
+      </h1>
+
+      <p class="lead">
+        Начинающий стример, который выходит в эфир <b>6 дней в неделю в 20:00 по МСК</b>. В чате
+        обычно <b>от 20 до 100 зрителей</b> — а значит, тебя точно услышат и ответят лично.
+        А <span class="cyan">воскресенье</span> решает голосование в Telegram.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="https://www.twitch.tv/holy_father_215" target="_blank" rel="noopener noreferrer" data-follow>
+          <i class="shine"></i>
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg>
+          Подписаться на Twitch
+        </a>
+        <div class="counters">
+          <div class="counter" id="counter">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#22d3ee"><use href="#i-users"/></svg>
+            <b id="viewerCount">42</b>
+            <small>смотрят</small>
+          </div>
+          <div class="counter">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#ff3ea5"><use href="#i-bolt"/></svg>
+            <b>20:00</b>
+            <small>по МСК</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="channel-link">
+        <a href="https://www.twitch.tv/holy_father_215" target="_blank" rel="noopener noreferrer">twitch.tv/holy_father_215</a>
+        <span>·</span>
+        <span>бесплатно, без регистрации, в один клик</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#22d3ee"><use href="#i-users"/></svg>
+          <b>20–100</b><small>зрителей</small>
+        </div>
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#ff3ea5"><use href="#i-bolt"/></svg>
+          <b>20:00</b><small>старт по мск</small>
+        </div>
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#c084fc"><use href="#i-calendar"/></svg>
+          <b>6/7</b><small>дней в неделю</small>
+        </div>
+        <div class="stat">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#f472b6"><use href="#i-heart"/></svg>
+          <b>0%</b><small>токсичности</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- player -->
+    <div class="player-wrap">
+      <div class="player">
+        <div class="player-top">
+          <div class="live"><i class="dot-pulse"></i><span>Live</span></div>
+          <div class="player-name">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg>
+            holy_father_215
+          </div>
+          <div class="player-meta">
+            <span class="v"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px"><use href="#i-users"/></svg><span id="topViewers">47</span></span>
+            <span class="mono" id="playerTime" style="font-size:11px;color:rgba(243,236,255,.4)">01:41:12</span>
+          </div>
+        </div>
+
+        <div class="screen">
+          <div class="grid-bg"></div>
+          <div class="so so1 anim-float"></div>
+          <div class="so so2 anim-float" style="animation-delay:-6s"></div>
+          <div class="so so3"></div>
+          <div class="scanline"></div>
+
+          <div class="screen-center">
+            <div class="halo">
+              <span class="ring1"></span><span class="ring2"></span>
+              <span class="core"><div><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg></div></span>
+            </div>
+            <h3>Holy_Father_215</h3>
+            <p>6 дней в неделю · 20:00 мск</p>
+          </div>
+
+          <div class="screen-chip chip-l">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#a970ff"><use href="#i-twitch"/></svg>
+            <span>новый фолловер 🎉</span>
+          </div>
+          <div class="screen-chip chip-r">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#ff3ea5"><use href="#i-heart"/></svg>
+            <span>каждый тут важен</span>
+          </div>
+
+          <div class="chat-col" id="chat"></div>
+
+          <div class="controls">
+            <div class="bar"><i id="progress" style="width:37%"></i></div>
+            <div class="ctrls">
+              <button class="play-btn" id="playBtn" aria-label="Пауза">
+                <svg class="ic" viewBox="0 0 24 24" fill="currentColor" id="playIcon" style="display:none"></svg>
+                <span id="pauseIcon" style="display:flex;gap:4px"><i style="width:3px;height:12px;border-radius:2px;background:#fff"></i><i style="width:3px;height:12px;border-radius:2px;background:#fff"></i></span>
+              </button>
+              <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#ff3ea5"><use href="#i-bolt"/></svg>
+              <button class="ico-btn" id="muteBtn" aria-label="Звук">
+                <svg class="ic" viewBox="0 0 24 24" fill="currentColor" id="volIcon" style="color:rgba(255,255,255,.45)"><use href="#i-volume"/></svg>
+              </button>
+              <span class="time" id="ctrlTime">01:41:12</span>
+              <span class="hd"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-bolt"/></svg>1080p60</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TICKER ===================== -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span class="ticker-item"><b>СТРИМЫ 6/7 В 20:00 МСК</b><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-spark"/></svg></span>
+    <span class="ticker-item"><b>НАЧИНАЮЩИЙ СТРИМЕР</b><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-spark"/></svg></span>
+    <span class="ticker-item"><b>20–100 ЗРИТЕЛЕЙ В ЭФИРЕ</b><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-spark"/></svg></span>
+    <span class="ticker-item"><b>ВОСКРЕСЕНЬЕ — ПО ГОЛОСОВАНИЮ</b><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-spark"/></svg></span>
+    <span class="ticker-item"><b>HOLY_FATHER_215</b><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-spark"/></svg></span>
+    <span class="ticker-item"><b>ЗАХОДИ, ТЕБЯ ЗАМЕТЯТ</b><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-spark"/></svg></span>
+    <span class="ticker-item"><b>РАСТЁМ ВМЕСТЕ</b><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-spark"/></svg></span>
+  </div>
+</div>
+
+<!-- ===================== FEATURES ===================== -->
+<section class="section" id="features">
+  <div class="container">
+    <div class="sec-head reveal">
+      <div class="sec-label">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#ff3ea5"><use href="#i-spark"/></svg>
+        <span>Почему стоит зайти именно сюда</span>
+      </div>
+      <h2>Тут <span class="pink">тебя</span> заметят</h2>
+      <p>
+        Holy Father только начинает свой путь на Twitch. Пока в эфире 20–100 человек — самое
+        время залететь и стать частью канала с самого старта.
+      </p>
+    </div>
+
+    <div class="features">
+      <article class="fcard reveal">
+        <div class="blob"></div>
+        <div class="fico" style="background:linear-gradient(135deg,#9146ff,#a970ff)">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><use href="#i-twitch"/></svg>
+        </div>
+        <h3>6 дней в неделю</h3>
+        <p>Стабильный график: стрим стартует ровно в 20:00 по МСК с понедельника по субботу.</p>
+      </article>
+
+      <article class="fcard reveal">
+        <div class="blob"></div>
+        <div class="fico" style="background:linear-gradient(135deg,#22d3ee,#0ea5e9)">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><use href="#i-vote"/></svg>
+        </div>
+        <h3>Воскресенье решаешь ты</h3>
+        <p>Будет ли эфир в воскресенье — определяет голосование в Telegram-канале. Твой голос реально влияет.</p>
+      </article>
+
+      <article class="fcard reveal">
+        <div class="blob"></div>
+        <div class="fico" style="background:linear-gradient(135deg,#22d3ee,#3b82f6)">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><use href="#i-users"/></svg>
+        </div>
+        <h3>Уютные 20–100 зрителей</h3>
+        <p>Небольшой зал — это плюс. Тут реально успевают прочитать твоё сообщение и ответить лично.</p>
+      </article>
+
+      <article class="fcard reveal">
+        <div class="blob"></div>
+        <div class="fico" style="background:linear-gradient(135deg,#ff3ea5,#f43f5e)">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><use href="#i-bolt"/></svg>
+        </div>
+        <h3>Начинающий стример</h3>
+        <p>Канал только набирает обороты. Заходи сейчас — и будешь тем, кто был здесь с самого начала.</p>
+      </article>
+
+      <article class="fcard reveal">
+        <div class="blob"></div>
+        <div class="fico" style="background:linear-gradient(135deg,#a3e635,#22c55e)">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><use href="#i-chat"/></svg>
+        </div>
+        <h3>Живое общение</h3>
+        <p>Никакого конвейера. Holy Father читает чат, отвечает на вопросы и реально общается со всеми.</p>
+      </article>
+
+      <article class="fcard reveal">
+        <div class="blob"></div>
+        <div class="fico" style="background:linear-gradient(135deg,#c084fc,#9146ff)">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#fff"><use href="#i-crown"/></svg>
+        </div>
+        <h3>Растём без токсичности</h3>
+        <p>Спокойная атмосфера и адекватный чат. Каждый новый зритель заметен — это не капля в море, а реальная поддержка.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== QUOTE + SCHEDULE ===================== -->
+<section class="section" id="schedule" style="padding-top:0">
+  <div class="container split">
+    <div class="quote reveal">
+      <div class="stars">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg>
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg>
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg>
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg>
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-star"/></svg>
+      </div>
+      <blockquote>
+        «Маленький канал — это не минус, а пропуск в нормальное общение. Здесь тебя заметят с
+        первого сообщения, а не потеряют в потоке из тысячи сообщений в секунду.»
+      </blockquote>
+      <div class="who">
+        <div class="avatar">HF</div>
+        <div>
+          <b>holy_father_215</b>
+          <span><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-heart"/></svg>20–100 зрителей каждый вечер</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel reveal">
+      <h3>Ближайший стрим</h3>
+      <p class="sub">Каждый день, ровно в 20:00 по московскому времени.</p>
+
+      <div class="cd" id="cd">
+        <div><b id="cdH">00</b><small>часов</small></div>
+        <div><b id="cdM">00</b><small>минут</small></div>
+        <div><b id="cdS">00</b><small>секунд</small></div>
+      </div>
+      <div class="cd" id="cdLive" style="display:none">
+        <div style="flex:1;display:flex;align-items:center;justify-content:center;gap:10px;border-color:rgba(239,68,68,.4);background:rgba(239,68,68,.12)">
+          <i class="dot-pulse"></i><b style="font-size:15px;letter-spacing:.02em;text-transform:uppercase;color:#fca5a5">Стрим идёт прямо сейчас</b>
+        </div>
+      </div>
+
+      <div class="week" id="week">
+        <div class="day" data-i="0"><b>Пн</b><span>20:00</span></div>
+        <div class="day" data-i="1"><b>Вт</b><span>20:00</span></div>
+        <div class="day" data-i="2"><b>Ср</b><span>20:00</span></div>
+        <div class="day" data-i="3"><b>Чт</b><span>20:00</span></div>
+        <div class="day" data-i="4"><b>Пт</b><span>20:00</span></div>
+        <div class="day" data-i="5"><b>Сб</b><span>20:00</span></div>
+        <div class="day sun" data-i="6"><b>Вс</b><span>голос</span></div>
+      </div>
+
+      <div class="note">
+        <p>
+          Стримы <b>6 дней в неделю в 20:00 по МСК</b>.<br />
+          <em>Воскресенье</em> — решает голосование в Telegram.
+        </p>
+        <a href="https://t.me/holyfather215" target="_blank" rel="noopener noreferrer">
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="width:14px;height:14px"><use href="#i-telegram"/></svg>
+          Голосовать в Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TELEGRAM ===================== -->
+<section class="section" id="telegram" style="padding-top:0">
+  <div class="container">
+    <div class="tg reveal">
+      <div class="orb-t"></div>
+      <div class="tg-grid">
+        <div>
+          <div class="sec-label" style="border-color:rgba(34,211,238,.35);background:rgba(34,211,238,.12)">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor" style="color:#22d3ee"><use href="#i-vote"/></svg>
+            <span style="color:#67e8f9">Голосование по воскресеньям</span>
+          </div>
+          <h2>Воскресный стрим <span class="cyan">решаешь ты</span></h2>
+          <p>
+            С понедельника по субботу эфир стабильно в 20:00 по МСК. А будет ли стрим в
+            воскресенье — определяет голосование в Telegram-канале. Подписывайся, чтобы успеть
+            отдать свой голос и первым узнавать об изменениях в расписании.
+          </p>
+          <a class="tg-link" href="https://t.me/holyfather215" target="_blank" rel="noopener noreferrer">t.me/holyfather215</a>
+        </div>
+        <div style="display:flex;justify-content:center">
+          <a class="btn btn-tg" href="https://t.me/holyfather215" target="_blank" rel="noopener noreferrer">
+            <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-telegram"/></svg>
+            Вступить в Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SHARE ===================== -->
+<section class="section" id="share" style="padding-top:0">
+  <div class="container">
+    <div class="share reveal">
+      <div class="grid-bg"></div>
+      <h3>Расскажи друзьям</h3>
+      <p class="sub">
+        Начинающему стримеру каждый зритель на вес золота. Кинь ссылку друзьям — и сегодня в
+        20:00 нас будет больше.
+      </p>
+
+      <div class="copy-box">
+        <code id="linkText">https://www.twitch.tv/holy_father_215</code>
+        <button class="copy-btn" id="copyBtn">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="copyIcon"><use href="#i-copy"/></svg>
+          <span id="copyLabel">Копировать</span>
+        </button>
+      </div>
+
+      <div class="socials">
+        <button id="shareBtn"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg>Поделиться</button>
+        <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.twitch.tv%2Fholy_father_215&text=%D0%A1%D1%82%D1%80%D0%B8%D0%BC%20holy_father_215%20%E2%80%94%206%20%D0%B4%D0%BD%D0%B5%D0%B9%20%D0%B2%20%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8E%20%D0%B2%2020%3A00%20%D0%BF%D0%BE%20%D0%9C%D0%A1%D0%9A!" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-telegram"/></svg>Telegram</a>
+        <a href="https://vk.com/share.php?url=https%3A%2F%2Fwww.twitch.tv%2Fholy_father_215" target="_blank" rel="noopener noreferrer">ВКонтакте</a>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.twitch.tv%2Fholy_father_215&text=%D0%97%D0%B0%D1%85%D0%BE%D0%B4%D0%B8%20%D0%BD%D0%B0%20%D1%81%D1%82%D1%80%D0%B8%D0%BC%20holy_father_215" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="section" style="padding-top:0">
+  <div class="container" style="max-width:56rem">
+    <div class="cta reveal">
+      <div class="noise"></div>
+      <div class="o o1"></div>
+      <div class="o o2"></div>
+      <div class="cta-icon"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg></div>
+      <h2>Жми кнопку<br />и приходи на стрим</h2>
+      <p>
+        Один клик — и ты уже в эфире Holy Father. Шесть дней в неделю в 20:00 по МСК, в уютной
+        компании из 20–100 человек. Место для ещё одного зрителя всегда найдётся.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://www.twitch.tv/holy_father_215" target="_blank" rel="noopener noreferrer" data-follow>
+          <i class="shine"></i>
+          <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg>
+          Подписаться на Twitch
+        </a>
+      </div>
+      <div class="meta">
+        <span>20–100 зрителей</span><span>•</span>
+        <span>6 дней в неделю в 20:00 МСК</span><span>•</span>
+        <span>воскресенье — по голосованию</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="m"><svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg></span>
+      <b>Holy_Father_215</b>
+    </div>
+    <p>Рекламный сайт канала. Проект не связан с Twitch Interactive, Inc.</p>
+    <div class="footer-links">
+      <a class="f-twitch" href="https://www.twitch.tv/holy_father_215" target="_blank" rel="noopener noreferrer">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-twitch"/></svg>twitch.tv/holy_father_215
+      </a>
+      <a class="f-tg" href="https://t.me/holyfather215" target="_blank" rel="noopener noreferrer">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><use href="#i-telegram"/></svg>t.me/holyfather215
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var CHANNEL_URL = "https://www.twitch.tv/holy_father_215";
+  var TG_URL = "https://t.me/holyfather215";
+
+  /* ---------------- helpers ---------------- */
+  function $(id) { return document.getElementById(id); }
+  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+
+  /* ---------------- ticker: clone for seamless loop ---------------- */
+  var track = $("tickerTrack");
+  if (track) {
+    var html = track.innerHTML;
+    track.innerHTML = html + html;
+  }
+
+  /* ---------------- viewer counter (20–100) ---------------- */
+  var viewers = 42;
+  var viewerEl = $("viewerCount");
+  var topViewersEl = $("topViewers");
+  var counterEl = $("counter");
+  function paintViewers() {
+    if (viewerEl) viewerEl.textContent = viewers;
+    if (topViewersEl) topViewersEl.textContent = viewers;
+  }
+  paintViewers();
+  setInterval(function () {
+    viewers = clamp(viewers + (Math.random() > 0.5 ? 1 : -1), 20, 100);
+    paintViewers();
+    if (counterEl) {
+      counterEl.classList.add("burst");
+      setTimeout(function () { counterEl.classList.remove("burst"); }, 600);
+    }
+  }, 2200);
+
+  /* ---------------- fake live chat ---------------- */
+  var NAMES = ["kolya_dev","dark_wolf","nyx","ProShka","vovanych","mikoto","s1mpleFan","lera_","kraken","tihiy"];
+  var LINES = [
+    "привет, первый раз тут 👋","о, нас уже 40!","подписался, удачи в развитии","ламповый стрим",
+    "holy father передаёт привет 👋","W streamer","в тг уже проголосовал ✅","GGG",
+    "каждый день в 20:00, запомнил","уютно тут","GG WP","зову друзей в чат","момент бахнутый",
+    "растём потихоньку 📈","сколько уже стримов?","лайк за старания","в вс будет стрим? го голосовать"
+  ];
+  var COLORS = ["#c084fc","#22d3ee","#ff6ec7","#a3e635","#fb923c","#60a5fa"];
+  var chat = $("chat");
+  var chatOn = true;
+  function addChat(seed) {
+    if (!chat) return;
+    var i = (typeof seed === "number") ? seed : Math.floor(Math.random() * NAMES.length);
+    var p = document.createElement("p");
+    p.className = "chat-msg";
+    p.innerHTML = '<b style="color:' + COLORS[i % COLORS.length] + '">' +
+      NAMES[i % NAMES.length] + '</b><span style="color:rgba(255,255,255,.8)">: ' +
+      LINES[(i * 3 + Math.floor(Math.random() * LINES.length)) % LINES.length] + "</span>";
+    chat.appendChild(p);
+    while (chat.children.length > 9) chat.removeChild(chat.firstChild);
+    Array.prototype.forEach.call(chat.children, function (c, n) {
+      c.style.opacity = String(0.55 + n * 0.06);
+    });
+  }
+  for (var i = 0; i < 7; i++) addChat(i);
+
+  /* ---------------- player: progress + timer + chat tick ---------------- */
+  var progress = 37, playing = true, n = 0;
+  var progressEl = $("progress");
+  var timeEls = [$("playerTime"), $("ctrlTime")];
+  function paintTime() {
+    var total = Math.floor((progress / 100) * 60 * 60 * 3);
+    var h = Math.floor(total / 3600), m = Math.floor((total % 3600) / 60), s = total % 60;
+    var str = pad(h) + ":" + pad(m) + ":" + pad(s);
+    for (var k = 0; k < timeEls.length; k++) if (timeEls[k]) timeEls[k].textContent = str;
+  }
+  paintTime();
+
+  setInterval(function () {
+    if (!playing) return;
+    n++;
+    if (chatOn) addChat(n);
+    progress = progress >= 100 ? 0 : progress + 0.35;
+    if (progressEl) progressEl.style.width = progress + "%";
+    paintTime();
+  }, 900);
+
+  var playBtn = $("playBtn");
+  if (playBtn) {
+    playBtn.addEventListener("click", function () {
+      playing = !playing;
+      var pi = $("pauseIcon"), pl = $("playIcon");
+      if (playing) {
+        if (pi) pi.style.display = "flex";
+        if (pl) pl.style.display = "none";
+        playBtn.setAttribute("aria-label", "Пауза");
+      } else {
+        if (pi) pi.style.display = "none";
+        if (pl) { pl.style.display = "block"; pl.setAttribute("fill", "currentColor");
+          pl.innerHTML = '<path d="M6 4l14 8-14 8z"/>'; }
+        playBtn.setAttribute("aria-label", "Играть");
+      }
+    });
+  }
+
+  var muteBtn = $("muteBtn");
+  if (muteBtn) {
+    muteBtn.addEventListener("click", function () {
+      var vi = $("volIcon");
+      if (!vi) return;
+      var muted = vi.style.color.indexOf("245") !== -1;
+      vi.style.color = muted ? "#fff" : "rgba(255,255,255,.45)";
+    });
+  }
+
+  /* ---------------- countdown to 20:00 MSK (skips Sunday) ---------------- */
+  function nextStreamMs(now) {
+    var d = new Date(now.getTime());
+    var target = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), 17, 0, 0, 0);
+    if (target <= now.getTime()) target += 86400000;
+    while (new Date(target).getUTCDay() === 0) target += 86400000;
+    return target;
+  }
+  function mskNow(now) {
+    return new Date(now.getTime() + (3 * 60 + now.getTimezoneOffset()) * 60000);
+  }
+  var cdH = $("cdH"), cdM = $("cdM"), cdS = $("cdS");
+  var cdBox = $("cd"), cdLive = $("cdLive");
+  var days = document.querySelectorAll("#week .day");
+  function tickClock() {
+    var now = new Date();
+    var diff = Math.max(0, nextStreamMs(now) - now.getTime());
+    var m = mskNow(now);
+    var idx = (m.getDay() + 6) % 7;
+    var hour = m.getHours();
+    var live = idx !== 6 && hour >= 20 && hour < 23;
+
+    if (cdLive) cdLive.style.display = live ? "flex" : "none";
+    if (cdBox) cdBox.style.display = live ? "none" : "flex";
+    if (!live) {
+      if (cdH) cdH.textContent = pad(Math.floor(diff / 3600000));
+      if (cdM) cdM.textContent = pad(Math.floor((diff % 3600000) / 60000));
+      if (cdS) cdS.textContent = pad(Math.floor((diff % 60000) / 1000));
+    }
+    for (var k = 0; k < days.length; k++) {
+      days[k].classList.toggle("today", Number(days[k].getAttribute("data-i")) === idx);
+    }
+  }
+  tickClock();
+  setInterval(tickClock, 1000);
+
+  /* ---------------- copy link ---------------- */
+  function legacyCopy(text) {
+    var ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand("copy"); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+  var copyBtn = $("copyBtn"), copyLabel = $("copyLabel");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      var done = function () {
+        copyBtn.classList.add("done");
+        if (copyLabel) copyLabel.textContent = "Скопировано";
+        var ci = $("copyIcon");
+        if (ci) ci.innerHTML = '<use href="#i-check" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>';
+        setTimeout(function () {
+          copyBtn.classList.remove("done");
+          if (copyLabel) copyLabel.textContent = "Копировать";
+          if (ci) ci.innerHTML = '<use href="#i-copy"/>';
+        }, 1800);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(CHANNEL_URL).then(done).catch(function () { legacyCopy(CHANNEL_URL); done(); });
+      } else {
+        legacyCopy(CHANNEL_URL);
+        done();
+      }
+    });
+  }
+
+  /* ---------------- share ---------------- */
+  var shareBtn = $("shareBtn");
+  if (shareBtn) {
+    shareBtn.addEventListener("click", function () {
+      if (navigator.share) {
+        navigator.share({ title: "holy_father_215", text: "Стрим 6 дней в неделю в 20:00 по МСК!", url: CHANNEL_URL })
+          .catch(function () {});
+      } else if (copyBtn) {
+        copyBtn.click();
+      }
+    });
+  }
+
+  /* ---------------- follow buttons: bump counter ---------------- */
+  var followBtns = document.querySelectorAll("[data-follow]");
+  for (var f = 0; f < followBtns.length; f++) {
+    followBtns[f].addEventListener("click", function () {
+      viewers = clamp(viewers + 1, 20, 100);
+      paintViewers();
+    });
+  }
+
+  /* ---------------- reveal on scroll ---------------- */
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e, i) {
+        if (e.isIntersecting) {
+          setTimeout(function () { e.target.classList.add("in"); }, i * 70);
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    for (var r = 0; r < reveals.length; r++) io.observe(reveals[r]);
+  } else {
+    for (var r2 = 0; r2 < reveals.length; r2++) reveals[r2].classList.add("in");
+  }
+
+  /* ---------------- smooth scroll for anchors ---------------- */
+  var anchors = document.querySelectorAll('a[href^="#"]');
+  for (var a = 0; a < anchors.length; a++) {
+    anchors[a].addEventListener("click", function (ev) {
+      var id = this.getAttribute("href");
+      if (!id || id === "#") return;
+      var target = document.querySelector(id);
+      if (!target) return;
+      ev.preventDefault();
+      var top = target.getBoundingClientRect().top + window.pageYOffset - 70;
+      window.scrollTo({ top: top, behavior: "smooth" });
+    });
+  }
+})();
+</script>
+</body>
+</html>
