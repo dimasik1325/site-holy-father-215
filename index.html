@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>holy_father_215 — стримы, ауки и донат</title>
+  <meta name="description" content="Официальный сайт стримера holy_father_215: прямой эфир Twitch, чат, донат и расписание ауков. Каждый день в эфире, по воскресеньям решаешь ты — в Telegram." />
+  <meta name="theme-color" content="#0a0710" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="holy_father_215 — стримы, ауки и донат" />
+  <meta property="og:description" content="Прямой эфир на Twitch, чат, донат и расписание ауков. По воскресеньям решаешь ты — в Telegram." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="holy_father_215 — на главную">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <circle cx="24" cy="24" r="15" fill="none" stroke="currentColor" stroke-width="2.5" opacity=".45"/>
+            <circle cx="24" cy="24" r="8.5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M24 6v7M24 35v7M6 24h7M35 24h7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">holy_father_215</span>
+          <span class="brand-sub">stream · auctions · chaos</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#stream">Стрим</a>
+        <a href="#donate">Донат</a>
+        <a href="#schedule">Расписание</a>
+        <a href="#telegram">Telegram</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="live-pill" id="livePill" hidden>
+          <span class="live-dot" aria-hidden="true"></span> LIVE
+        </span>
+        <a class="btn btn-primary btn-sm" href="https://www.donationalerts.com/r/holy_father_215" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.7-9.3-9A5.4 5.4 0 0 1 12 6.6 5.4 5.4 0 0 1 21.3 12c-1.8 4.3-9.3 9-9.3 9Z" fill="currentColor"/></svg>
+          Донат
+        </a>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#stream">Стрим</a>
+      <a href="#donate">Донат</a>
+      <a href="#schedule">Расписание</a>
+      <a href="#telegram">Telegram</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="spark" aria-hidden="true">✦</span> каждый день в эфире</p>
+          <h1 class="hero-title">
+            <span class="grad">holy_father_215</span>
+          </h1>
+          <p class="hero-lead">
+            Аук каждый день. В воскресенье решаешь <strong>ты</strong> — в Telegram.
+            Заходи в эфир, кидай донат и правь этим шоу.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://www.donationalerts.com/r/holy_father_215" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.7-9.3-9A5.4 5.4 0 0 1 12 6.6 5.4 5.4 0 0 1 21.3 12c-1.8 4.3-9.3 9-9.3 9Z" fill="currentColor"/></svg>
+              Поддержать донатом
+            </a>
+            <a class="btn btn-ghost" href="https://t.me/holyfather215" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.9 8.5-7.7c.4-.3-.1-.5-.6-.2L6.9 12.6 2.5 11.2c-1-.3-1-1 .2-1.4L20.6 3c.8-.3 1.5.2 1.3 1.3Z" fill="currentColor"/></svg>
+              Telegram-канал
+            </a>
+          </div>
+
+          <ul class="hero-facts">
+            <li><strong>7/7</strong><span>дней в неделю в эфире</span></li>
+            <li><strong>1</strong><span>день, когда решаешь ты</span></li>
+            <li><strong>∞</strong><span>поводов задонатить</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="halo"></div>
+          <img class="hero-avatar" src="assets/holy-father.jpg" alt="" width="640" height="640" loading="eager" />
+          <div class="chip chip-1">АУК</div>
+          <div class="chip chip-2">ПО ВОСКРЕСЕНЬЯМ — ТЫ</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STREAM ================= -->
+    <section class="section" id="stream">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Прямой эфир</p>
+            <h2 class="section-title">Монитор стрима</h2>
+          </div>
+          <div class="section-aside">
+            <span class="status" id="statusBadge" data-state="idle">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span id="statusText">Проверяем эфир…</span>
+            </span>
+            <a class="btn btn-quiet btn-sm" href="https://www.twitch.tv/holy_father_215" target="_blank" rel="noopener">
+              Открыть на Twitch
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="stream-grid">
+          <div class="player-card">
+            <div class="player-frame" id="playerFrame">
+              <div class="player-skeleton" id="playerSkeleton" aria-hidden="true">
+                <div class="skeleton-halo"></div>
+                <p>Загружаем плеер Twitch…</p>
+              </div>
+              <iframe
+                id="twitchPlayer"
+                title="Стрим holy_father_215 на Twitch"
+                src="about:blank"
+                allowfullscreen
+                scrolling="no"
+                frameborder="0"></iframe>
+            </div>
+            <div class="player-bar">
+              <div class="player-meta">
+                <span class="live-pill small" id="livePillBar" hidden>
+                  <span class="live-dot" aria-hidden="true"></span> LIVE
+                </span>
+                <span class="muted">twitch.tv/<strong>holy_father_215</strong></span>
+              </div>
+              <button class="btn btn-quiet btn-sm" id="reloadPlayer" type="button">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v4h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Перезагрузить
+              </button>
+            </div>
+          </div>
+
+          <div class="chat-card">
+            <div class="chat-head">
+              <span class="chat-title">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-5 4V5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+                Чат Twitch
+              </span>
+              <a class="chat-link" href="https://www.twitch.tv/holy_father_215" target="_blank" rel="noopener">Открыть в Twitch</a>
+            </div>
+            <div class="chat-frame">
+              <div class="chat-skeleton" id="chatSkeleton" aria-hidden="true">
+                <span class="chat-line w70"></span>
+                <span class="chat-line w45"></span>
+                <span class="chat-line w85"></span>
+                <span class="chat-line w60"></span>
+                <span class="chat-line w75"></span>
+                <span class="chat-line w40"></span>
+              </div>
+              <iframe
+                id="twitchChat"
+                title="Чат стрима holy_father_215"
+                src="about:blank"
+                height="500"
+                scrolling="no"
+                frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <p class="stream-note">
+          Если сейчас нет эфира — плеер покажет офлайн-заставку, а чат продолжает работать.
+          Включи звук в плеере, чтобы слышать происходящее.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= DONATE ================= -->
+    <section class="section" id="donate">
+      <div class="container">
+        <div class="donate-grid">
+          <div class="donate-copy">
+            <p class="section-kicker">Поддержка</p>
+            <h2 class="section-title">Донат — это топливо эфира</h2>
+            <p class="lead">
+              Донаты идут на новые ауки, более длинные стримы и техническую часть.
+              Сообщение в донате читается в эфире — пиши, что хочешь увидеть.
+            </p>
+
+            <div class="donate-amounts" aria-hidden="true">
+              <span>100 ₽</span>
+              <span>250 ₽</span>
+              <span>500 ₽</span>
+              <span>1000 ₽</span>
+            </div>
+
+            <a class="btn btn-primary btn-lg" href="https://www.donationalerts.com/r/holy_father_215" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.7-9.3-9A5.4 5.4 0 0 1 12 6.6 5.4 5.4 0 0 1 21.3 12c-1.8 4.3-9.3 9-9.3 9Z" fill="currentColor"/></svg>
+              Задонатить на DonationAlerts
+            </a>
+            <p class="tiny">Откроется страница donationalerts.com/r/holy_father_215</p>
+          </div>
+
+          <div class="donate-card">
+            <div class="donate-card-top">
+              <span class="donate-emoji" aria-hidden="true">☕</span>
+              <div>
+                <p class="donate-card-title">За что донат?</p>
+                <p class="donate-card-sub">Коротко и по делу</p>
+              </div>
+            </div>
+            <ul class="donate-list">
+              <li><span aria-hidden="true">◈</span> Аук каждый день — без пропусков</li>
+              <li><span aria-hidden="true">◈</span> Твоя тема в воскресном эфире</li>
+              <li><span aria-hidden="true">◈</span> Чтение сообщений в прямом эфире</li>
+              <li><span aria-hidden="true">◈</span> Новое железо и нормальный звук</li>
+            </ul>
+            <div class="donate-card-footer">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              100% идёт в контент
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SCHEDULE ================= -->
+    <section class="section" id="schedule">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Расписание</p>
+            <h2 class="section-title">Аук — каждый день</h2>
+          </div>
+          <p class="section-aside-text">Старт вечером. Точное время — в Telegram.</p>
+        </div>
+
+        <div class="week">
+          <article class="day">
+            <p class="day-name">Пн</p>
+            <p class="day-tag">Аук</p>
+            <p class="day-note">Классика</p>
+          </article>
+          <article class="day">
+            <p class="day-name">Вт</p>
+            <p class="day-tag">Аук</p>
+            <p class="day-note">Классика</p>
+          </article>
+          <article class="day">
+            <p class="day-name">Ср</p>
+            <p class="day-tag">Аук</p>
+            <p class="day-note">Классика</p>
+          </article>
+          <article class="day">
+            <p class="day-name">Чт</p>
+            <p class="day-tag">Аук</p>
+            <p class="day-note">Классика</p>
+          </article>
+          <article class="day">
+            <p class="day-name">Пт</p>
+            <p class="day-tag">Аук</p>
+            <p class="day-note">Пятничный движ</p>
+          </article>
+          <article class="day">
+            <p class="day-name">Сб</p>
+            <p class="day-tag">Аук</p>
+            <p class="day-note">Долгий эфир</p>
+          </article>
+          <article class="day day-special">
+            <p class="day-name">Вс</p>
+            <p class="day-tag">Решаешь ты</p>
+            <p class="day-note">Формат выбирает Telegram</p>
+          </article>
+        </div>
+
+        <div class="sunday-banner">
+          <div class="sunday-text">
+            <h3>Воскресенье — день чата</h3>
+            <p>Тему, формат и правила аука выбираете вы: голосование и предложения — в Telegram-канале.</p>
+          </div>
+          <a class="btn btn-ghost" href="https://t.me/holyfather215" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.9 8.5-7.7c.4-.3-.1-.5-.6-.2L6.9 12.6 2.5 11.2c-1-.3-1-1 .2-1.4L20.6 3c.8-.3 1.5.2 1.3 1.3Z" fill="currentColor"/></svg>
+            Голосовать в Telegram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TELEGRAM ================= -->
+    <section class="section" id="telegram">
+      <div class="container">
+        <div class="telegram-card">
+          <div class="telegram-copy">
+            <p class="section-kicker">Сообщество</p>
+            <h2 class="section-title">Всё важное — в Telegram</h2>
+            <p class="lead">
+              Анонсы эфиров, голосования за воскресный аук, мемы и разборы.
+              Без этого канала ты пропустишь половину движа.
+            </p>
+            <a class="btn btn-primary btn-lg" href="https://t.me/holyfather215" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.9 8.5-7.7c.4-.3-.1-.5-.6-.2L6.9 12.6 2.5 11.2c-1-.3-1-1 .2-1.4L20.6 3c.8-.3 1.5.2 1.3 1.3Z" fill="currentColor"/></svg>
+              @holyfather215
+            </a>
+            <p class="tiny">Откроется t.me/holyfather215</p>
+          </div>
+          <ul class="telegram-points">
+            <li>
+              <span class="point-icon" aria-hidden="true">01</span>
+              <div>
+                <strong>Анонсы эфиров</strong>
+                <p>Заранее знаешь, во сколько начинаем и что будет.</p>
+              </div>
+            </li>
+            <li>
+              <span class="point-icon" aria-hidden="true">02</span>
+              <div>
+                <strong>Голосование за воскресенье</strong>
+                <p>Твой голос решает формат воскресного аука.</p>
+              </div>
+            </li>
+            <li>
+              <span class="point-icon" aria-hidden="true">03</span>
+              <div>
+                <strong>Клипы и мемы</strong>
+                <p>Лучшие моменты стримов и закулисье.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark small" aria-hidden="true">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="15" fill="none" stroke="currentColor" stroke-width="2.5" opacity=".45"/>
+            <circle cx="24" cy="24" r="8.5" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <path d="M24 6v7M24 35v7M6 24h7M35 24h7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <div>
+          <p class="footer-name">holy_father_215</p>
+          <p class="tiny">Стримы, ауки и хорошее настроение.</p>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Ссылки">
+        <a href="https://www.twitch.tv/holy_father_215" target="_blank" rel="noopener">Twitch</a>
+        <a href="https://t.me/holyfather215" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.donationalerts.com/r/holy_father_215" target="_blank" rel="noopener">DonationAlerts</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> holy_father_215. Сайт сделан фанатами и для фанатов.</p>
+      <a href="#top" class="to-top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
