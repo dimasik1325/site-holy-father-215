@@ -40,13 +40,18 @@
     window.setTimeout(function () { el.style.display = "none"; }, 400);
   }
 
+  function mountPlayer(src) {
+    if (!player) return;
+    player.addEventListener("load", function () { hideSkeleton(playerSkeleton); }, { once: true });
+    player.src = src;
+    // страховка: если событие load не пришло (бывает в iframe-окружениях)
+    window.setTimeout(function () { hideSkeleton(playerSkeleton); }, 6000);
+  }
+
   function mountEmbeds() {
     if (player && player.dataset.loaded !== "1") {
-      player.addEventListener("load", function () { hideSkeleton(playerSkeleton); }, { once: true });
-      player.src = playerSrc;
+      mountPlayer(playerSrc);
       player.dataset.loaded = "1";
-      // страховка: если событие load не пришло (бывает в iframe-окружениях)
-      window.setTimeout(function () { hideSkeleton(playerSkeleton); }, 6000);
     }
 
     if (chat && chat.dataset.loaded !== "1") {
@@ -68,12 +73,11 @@
   var reloadBtn = document.getElementById("reloadPlayer");
   if (reloadBtn && player) {
     reloadBtn.addEventListener("click", function () {
-      player.dataset.loaded = "";
       if (playerSkeleton) {
         playerSkeleton.style.display = "grid";
         playerSkeleton.style.opacity = "1";
       }
-      player.src = playerSrc + "&reload=" + Date.now();
+      mountPlayer(playerSrc + "&reload=" + Date.now());
     });
   }
 
